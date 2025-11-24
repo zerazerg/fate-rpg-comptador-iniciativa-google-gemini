@@ -47,7 +47,7 @@ const App: React.FC = () => {
 
   // 3. Get unique totals sorted descending (The "Steps" of initiative)
   const uniqueTotals = Array.from(new Set(charsWithTotals.map(c => c.total)))
-      .sort((a, b) => b - a);
+      .sort((a: number, b: number) => b - a);
   
   // 4. Determine current step index (1-based)
   const currentStep = currentTurnTotal !== null ? uniqueTotals.indexOf(currentTurnTotal) + 1 : 0;

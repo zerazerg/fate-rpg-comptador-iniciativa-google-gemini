@@ -59,19 +59,4 @@ export const DEFAULT_SKILLS: Record<string, number> = {
   'Provocació': 0,
 };
 
-export const INITIAL_CHARACTERS: Character[] = [
-  { 
-    id: '1', 
-    name: 'Jugador 1', 
-    skills: { ...DEFAULT_SKILLS, 'Reflexos': 2, 'Percepció': 1 }, 
-    boost: 0, 
-    isNPC: false 
-  },
-  { 
-    id: '2', 
-    name: 'Enemic A', 
-    skills: { ...DEFAULT_SKILLS, 'Reflexos': 1, 'Provocació': 3, 'Percepció': 2 }, 
-    boost: 0, 
-    isNPC: true 
-  },
-];
+export const INITIAL_CHARACTERS: Character[] = [];
