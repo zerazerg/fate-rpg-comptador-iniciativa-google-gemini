@@ -6,4 +6,11 @@ export default defineConfig({
   plugins: [react()],
   // IMPORTANT: The base must match your repository name for GitHub Pages to work
   base: '/fate-rpg-comptador-iniciativa-google-gemini/',
+  build: {
+    rollupOptions: {
+      input: {
+        main: './index.html',
+      },
+    },
+  },
 });
